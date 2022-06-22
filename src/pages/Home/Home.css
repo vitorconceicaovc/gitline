@@ -14,8 +14,67 @@ section .info {
     gap: 10px;
 }
 
+/*Home GitLogo Animation*/
+
 section .image {
     background: var(--color-light);
-    
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
+.gitlogo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+}
+
+.icons {
+    height: 70%;
+    animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.icons img {
+    position: absolute;
+    font-size: 1.1rem;
+    background: var(--color-light);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 1px solid var(--color-dark);
+}
+
+.icons img:nth-child(1) {
+   top: 10%;
+   right: 20%;
+   transform: rotate(45deg);
+}
+.icons img:nth-child(2) {
+   top: 10%;
+   right: 20%;
+   transform: rotate(45deg);
+    
+}
+.icons img:nth-child(3) {
+   top: 10%;
+   right: 20%;
+   transform: rotate(45deg);
+}
+.icons img:nth-child(4) {
+   top: 10%;
+   right: 20%;
+   transform: rotate(45deg);
+}
+.icons img:nth-child(5) {
+   top: 10%;
+   right: 20%;
+   transform: rotate(45deg);
+}

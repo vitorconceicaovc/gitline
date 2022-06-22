@@ -1,0 +1,9 @@
+footer {
+    position: absolute;
+    background: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px 40px;
+    border-radius: 50%;
+}
+
