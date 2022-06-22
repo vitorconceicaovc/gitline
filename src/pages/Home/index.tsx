@@ -3,6 +3,10 @@ import './Home.css';
 import { Footer } from '../../components/Footer/Footer';
 import  Gitlogo  from '../../Assets/git_logo.png';
 import Wave from '../../Assets/wave.svg';
+import { MdTimeline, MdMobileScreenShare } from 'react-icons/md'; 
+import { ImDatabase } from 'react-icons/im'; 
+import { FaReact } from 'react-icons/fa'; 
+import { CgProfile } from 'react-icons/cg';
 
 export const Home = () => {
     return (
@@ -19,11 +23,21 @@ export const Home = () => {
             </div>
             <div className="image">
                 <div className="icons">
-                    <img src={Gitlogo} alt="" />
-                    <img src={Gitlogo} alt="" />
-                    <img src={Gitlogo} alt="" />
-                    <img src={Gitlogo} alt="" />
-                    <img src={Gitlogo} alt="" />
+                    <div className="img">
+                        <MdTimeline/>
+                    </div>
+                    <div className="img">
+                        <ImDatabase/>
+                    </div>
+                    <div className="img">
+                        <FaReact/>
+                    </div>
+                    <div className="img">
+                        <MdMobileScreenShare/>
+                    </div>
+                    <div className="img">
+                        <CgProfile/>
+                    </div>
                 </div>
                 <img className='gitlogo' src={Gitlogo} alt="" />
             </div>
