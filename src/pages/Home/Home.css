@@ -1,6 +1,7 @@
 section.home {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
 }
 
 section .info {
@@ -43,7 +44,7 @@ section .image {
 
 .icons .img {
     position: absolute;
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -82,4 +83,59 @@ section .image {
     top: 36%;
     right: 74px;
    transform: rotate(288deg);
+}
+
+/*Home wave Animation*/
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+
+}
+
+.wave:before {
+    content: '';
+    position: absolute;
+    bottom: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/src/Assets/wave.svg) repeat-x;
+    background-size: cover;
+    background-position: -1000px 0;
+    opacity: .2;
+    animation: waveOne 60s linear infinite;
+    filter: invert(62%) sepia(61%) saturate(2140%) hue-rotate(147deg) brightness(104%) contrast(104%);
+}
+
+@keyframes waveOne {
+    50% {
+        background-position: 0 0;
+    }
+}
+
+.wave::after {
+    content: '';
+    position: absolute;
+    bottom: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/src/Assets/wave.svg) repeat-x;
+    background-size: cover;
+    background-position: 2732px 0;
+    opacity: .4;
+    animation: waveOne 120s linear infinite;
+    filter: invert(62%) sepia(61%) saturate(2140%) hue-rotate(147deg) brightness(104%) contrast(104%);
+}
+
+.filter-green{
+    filter: invert(62%) sepia(61%) saturate(2140%) hue-rotate(147deg) brightness(104%) contrast(104%);
+    opacity: .3;
+    background-size: cover;
+    width: 100%;
 }

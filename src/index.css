@@ -14,7 +14,8 @@ code {
 
 
 :root {
-  --color-light: #6DB5CA;
+  --color-wave: #00d9ff;
+  --color-light: #6a98a7;
   --color-dark: #B8D8E0;  
   --color-dark-second: #FF7235;
   --color-white: #FCF5EF;

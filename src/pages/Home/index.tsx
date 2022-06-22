@@ -41,6 +41,9 @@ export const Home = () => {
                 </div>
                 <img className='gitlogo' src={Gitlogo} alt="" />
             </div>
+            <div className="wave">
+                <img src={Wave} className="filter-green" alt="" />
+            </div>
             
         </section>
     );
