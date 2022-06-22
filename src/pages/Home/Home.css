@@ -1,0 +1,21 @@
+section.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section .info {
+    background: var(--color-light);
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: left;
+    gap: 10px;
+}
+
+section .image {
+    background: var(--color-light);
+    
+}
+
