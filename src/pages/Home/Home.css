@@ -1,7 +1,20 @@
 section.home {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     overflow: hidden;
+}
+
+@media screen and (min-width: 2px) {
+    
+    section.home {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    section.home {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 section .info {

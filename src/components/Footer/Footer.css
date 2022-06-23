@@ -3,7 +3,7 @@ footer {
     padding: 2px;
     text-align: center;
     left: 50%;
-    bottom: 10px;
+    bottom: 15px;
     color: var(--color-white);
     transform: translateX(-50%);
     z-index: 999;
@@ -12,6 +12,26 @@ footer {
 
 footer a:hover{
     color: var(--color-dark-second);
+}
+
+@media screen and (min-width: 2px) {
+    
+    footer .mobile {
+        display: inline;
+    }
+    footer .pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    footer .mobile {
+        display: none;
+    }
+    footer .pc {
+        display: inline;
+    }
 }
 
 
