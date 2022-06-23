@@ -15,7 +15,7 @@ export const Home = () => {
             <div className="info">
                 <h1 className='title'>GitLine</h1>
                 <h1 className='subtitle'>A melhor app de todas</h1>
-                <p>
+                <p className='resume' >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni, 
                     dolorem accusamus quae quia dicta blanditiis aspernatur at? Cupiditate.
                 </p>

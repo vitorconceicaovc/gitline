@@ -8,12 +8,18 @@ section.home {
     section.home {
         grid-template-columns: 1fr;
     }
+    section.home .resume {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     
     section.home {
         grid-template-columns: 1fr 1fr;
+    }
+    section.home .resume {
+        display: inline;
     }
 }
 
@@ -45,7 +51,7 @@ section .image {
 }
 
 .icons {
-    height: 80%;
+    max-height: 80%;
     animation: rotation 60s linear infinite;
 }
 
@@ -56,10 +62,11 @@ section .image {
 }
 
 .icons .img {
+    z-index: 2;
     position: absolute;
-    font-size: 2.5rem;
-    width: 70px;
-    height: 70px;
+    font-size: 2.7rem;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: contain;
     display: flex;
@@ -72,29 +79,29 @@ section .image {
 }
 
 .icons .img:nth-child(1) {
-    top: 20%;
-    right: -43px;
+    top: -204px;
+    right: -58px;
    transform: rotate(0deg);
 }
 .icons .img:nth-child(2) {
-    top: 37%;
-    right: -156px;
+    top: -67px;
+    right: -199px;
    transform: rotate(82deg);
     
 }
 .icons .img:nth-child(3) {
-    top: 60%;
-    right: 45px;
+    top: 74px;
+    right: 65px;
    transform: rotate(45deg);
 }
 .icons .img:nth-child(4) {
-    top: 62%;
-    right: -97px;
+    top: 99px;
+    right: -116px;
    transform: rotate(150deg);
 }
 .icons .img:nth-child(5) {
-    top: 36%;
-    right: 74px;
+    top: -109px;
+    right: 103px;
    transform: rotate(288deg);
 }
 
@@ -111,6 +118,7 @@ section .image {
 }
 
 .wave:before {
+    z-index: 3;
     content: '';
     position: absolute;
     bottom: o;
@@ -120,7 +128,7 @@ section .image {
     background: url(/src/Assets/wave.svg) repeat-x;
     background-size: cover;
     background-position: -1000px 0;
-    opacity: .2;
+    opacity: 1;
     animation: waveOne 60s linear infinite;
     filter: invert(62%) sepia(61%) saturate(2140%) hue-rotate(147deg) brightness(104%) contrast(104%);
 }
@@ -132,6 +140,7 @@ section .image {
 }
 
 .wave::after {
+    z-index: 1;
     content: '';
     position: absolute;
     bottom: o;
@@ -147,6 +156,7 @@ section .image {
 }
 
 .filter-green{
+    z-index: 1;
     filter: invert(62%) sepia(61%) saturate(2140%) hue-rotate(147deg) brightness(104%) contrast(104%);
     opacity: .3;
     background-size: cover;
