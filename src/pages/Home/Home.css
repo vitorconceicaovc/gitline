@@ -9,7 +9,10 @@ section.home {
         grid-template-columns: 1fr;
     }
     section.home .resume {
-        display: none;
+        display: inline;
+    }
+    section .info {
+        padding: 40px;
     }
 }
 
@@ -21,6 +24,9 @@ section.home {
     section.home .resume {
         display: inline;
     }
+    section .info {
+        padding-left: 100px;
+    }
 }
 
 section .info {
@@ -29,9 +35,9 @@ section .info {
     align-items:flex-start;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
     text-align: left;
     gap: 10px;
+    
 }
 
 /*Home GitLogo Animation*/
