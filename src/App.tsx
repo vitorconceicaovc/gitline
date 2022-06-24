@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <header>
         <Nav/>
+        
       </header>
       <Routes>
         <Route path='/' element={<Home/>} />

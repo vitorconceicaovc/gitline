@@ -1,12 +1,12 @@
 footer {
-    position: absolute;
+    position: fixed;
     padding: 2px;
     text-align: center;
     left: 50%;
     bottom: 15px;
     color: var(--color-white);
     transform: translateX(-50%);
-    z-index: 999;
+    z-index: 5;
     opacity: .6;
 }
 
