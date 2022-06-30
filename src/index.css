@@ -52,13 +52,13 @@ a:hover {
 
 .title {
   color: var(--color-dark);
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 .subtitle {
   margin-top: -20px;
   color: var(--color-dark);
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 p {

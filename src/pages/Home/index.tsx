@@ -14,9 +14,9 @@ export const Home = () => {
             <Footer/>
             <div className="info">
                 <h1 className='title'>GitLine</h1>
-                <h1 className='subtitle'>A melhor app de todas</h1>
+                <h1 className='subtitle'>graphical representation </h1>
                 <p className='resume' >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magni, 
+                Gitline combines API's and graphical representation to create a visual history of a users GitHub activity.
                     
                 </p>
                 <Link className="demo" to="/demo">Get started</Link>

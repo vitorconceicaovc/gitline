@@ -1,0 +1,9 @@
+.input-area {
+    padding-top: 70px;
+}
+
+.input-area input {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
