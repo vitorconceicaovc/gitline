@@ -1,0 +1,47 @@
+.item{
+   background: transparent;
+   width: 300px;
+   margin-top: 100px;
+   border: 1px solid black;
+}
+
+.item .top {
+    width: 100%;
+    background: transparent;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item .top .title {
+    text-align: right;
+    padding-left: 10px;
+}
+
+.item .top .date p{
+    background: var(--color-white);
+    color: red;
+    font-size: .8rem;
+    transform: translateX(-11px);
+    
+}
+
+.item .under {
+    padding: 5px;
+    text-align: left;
+}
+
+.item a {
+    border: var(--color-white);
+    background: var(--color-white);
+    color: black;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.item .top .title {
+    z-index: 5;
+}
+
+.item .top .date {
+    z-index: 4;
+}

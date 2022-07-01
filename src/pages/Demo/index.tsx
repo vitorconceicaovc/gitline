@@ -12,7 +12,7 @@ export const Demo = () => {
                 
             </div>
             
-            <Footer/>
+            
         </section>
     );
 }
