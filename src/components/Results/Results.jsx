@@ -18,6 +18,8 @@ export const Results = (props) => {
                     <li key={item.id} >
                         
                         <div className='item'>
+                            <div className="dot_two"></div>
+                            <div className="dot"></div>
                             <div className='top' >
                                 <div className='title'><a className="" href={item.html_url} target='_blank' >{item.name}</a></div>
                                 <div className='date'><p>{item.created_at.slice(0, 10)}</p></div>
@@ -29,12 +31,14 @@ export const Results = (props) => {
                             
                         </div>
                     </li> 
+                    
                 ))
+                
             ) : (
             <li className='arrow' ><IoIosArrowUp color='var(--color-white)' fontSize={35}  /></li>
             );
+            return (<ul className='timeline' >{listRepos}</ul>
         
-        return (<ul>{listRepos}</ul>
         
     );
 }

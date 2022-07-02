@@ -19,7 +19,7 @@
 }
 
 .item .top .date p{
-    background: linear-gradient(270deg, var(--color-light) 20%, var(--color-white) 100%);
+    background: linear-gradient(270deg, transparent 20%, var(--color-white) 100%);
     color: red;
     font-size: .9rem;
     transform: translateX(2px);
@@ -58,4 +58,35 @@
 .item .top .date {
     z-index: 4;
     text-align: left;
+}
+
+.timeline {
+    margin-right: 5px;
+    border: 15px solid ;
+    border-image: linear-gradient(180deg,var(--color-light),var(--color-white) 10%) 10;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.dot {
+    background: var(--color-white);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transform: translateX(503.8px);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.dot_two {
+    background: var(--color-light);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateX(510.8px);
+    margin-top: 17px;
+    z-index: 2;
 }

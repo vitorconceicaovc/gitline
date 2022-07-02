@@ -24,7 +24,8 @@
    animation-name: arrow;
    animation-duration: 1.5s;
    animation-iteration-count: infinite;
-   
+   position: absolute;
+   transform: translateX(-75%);
 }
 
 @keyframes arrow {
