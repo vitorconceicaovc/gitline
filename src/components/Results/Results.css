@@ -19,7 +19,7 @@
 }
 
 .item .top .date p{
-    background: var(--color-white);
+    background: linear-gradient(270deg, var(--color-light) 20%, var(--color-white) 100%);
     color: red;
     font-size: .9rem;
     transform: translateX(2px);
