@@ -1,0 +1,23 @@
+.searchbar {
+    display: flex;
+    gap: 2px;
+    margin-top: 20px;
+}
+.sbutton {
+    background: var(--color-white);
+    border: 2px solid var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0 50% 50% 0;
+    color: var(--color-light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.sbutton:hover {
+    background: transparent;
+    color: var(--color-white);
+}

@@ -1,5 +1,5 @@
 .input-area {
-    padding-top: 70px;
+    padding-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,8 +7,36 @@
     width: 100%;
 }
 
+.input-area h2 {
+    color: var(--color-dark);
+    font-size: 2rem;
+    margin-bottom: 20PX;
+}
+
 .input-area input {
     border: none;
-    border-radius: 5px;
+    border-radius: 15px 0 0 15px;
     padding: 5px 10px;
+    font-size: 1.1rem;
+}
+
+.arrow {
+   animation-name: arrow;
+   animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+   
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

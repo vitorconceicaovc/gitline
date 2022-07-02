@@ -1,4 +1,5 @@
 import './Results.css'
+import { IoIosArrowUp } from 'react-icons/io'
 
 export const Results = (props) => {
 
@@ -30,7 +31,7 @@ export const Results = (props) => {
                     </li> 
                 ))
             ) : (
-            <li>No repos</li>
+            <li className='arrow' ><IoIosArrowUp color='var(--color-white)' fontSize={35}  /></li>
             );
         
         return (<ul>{listRepos}</ul>

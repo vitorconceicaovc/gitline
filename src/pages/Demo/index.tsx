@@ -7,7 +7,7 @@ export const Demo = () => {
     return (
         <section>
             <div className="input-area">
-                <h2>Title</h2>
+                <h2>Search for Github Users</h2>
                 <SearchBar/>
                 
             </div>

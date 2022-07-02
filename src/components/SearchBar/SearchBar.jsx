@@ -1,6 +1,8 @@
 import axios  from "axios";
 import { useState } from "react";
 import { Results } from "../Results/Results";
+import './SearchBar.css'
+import {FaSearch} from 'react-icons/fa'
 
 export const SearchBar = () => {
 
@@ -32,8 +34,12 @@ export const SearchBar = () => {
 
     return (
         <>
-            <input type="text" placeholder="search" value={SearchInput} onChange={handleChange}/>
-            <button onClick={handleClick} >Search</button>
+            <div className="searchbar">
+                <input type="text" placeholder="search" value={SearchInput} onChange={handleChange}/>
+                <button className="sbutton" onClick={handleClick} ><FaSearch/></button>
+                
+            </div>
+            
             <Results repos={repos} />
         </>
     );
